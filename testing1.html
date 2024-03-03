@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <script>
+            let m = prompt(":");
+            if (m == "Hello") {
+                alert("Welcome!");
+            } else {
+                for (var i = 0; i < Infinity; i++) {
+                    function sleep(milliseconds) {
+                    var start = new Date().getTime();
+                    for (var i = 0; i < 1e7; i++) {
+                        if ((new Date().getTime() - start) > milliseconds){
+                            break;
+                        }
+                    }
+                }
+                sleep(2000);
+                alert("Go away!")
+            }
+        }
+        </script>
+    </header>
+    <Body>
+        <h1>Hello World!</h1>
+    </Body>
+</html>
