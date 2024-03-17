@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <!--From infoworld-->
+  <head>
+    <link rel="stylesheet"
+    href="https://pyscript.net/releases/2023.11.2/core.css" />
+    <script type="module"
+    src="https://pyscript.net/releases/2023.11.2/core.js">
+    </script>
+  </head>
+  <body>
+    <script type="py" terminal>
+import time
+import sys
+import time
+
+
+def print_d(words, delay=""):
+    d2 = float(delay)
+    for char in words:
+        sys.stdout.write(char)
+        sys.stdout.flush()
+        time.sleep(d2)
+    sys.stdout.write("""
+""")
+    sys.stdout.flush()
+
+
+print_d("""
+Welcome to
+ $$$$$$\            $$\                      $$\               $$\                              
+$$  __$$\           \__|                     $$ |              $$ |                              
+$$ /  \__| $$$$$$$\ $$\  $$$$$$\  $$$$$$$\ $$$$$$\    $$$$$$\  $$ | $$$$$$\   $$$$$$\  $$\   $$\
+\$$$$$$\  $$  _____|$$ |$$  __$$\ $$  __$$\\\\_$$  _|  $$  __$$\ $$ |$$  __$$\ $$  __$$\ $$ |  $$ |
+ \____$$\ $$ /      $$ |$$$$$$$$ |$$ |  $$ | $$ |    $$ /  $$ |$$ |$$ /  $$ |$$ /  $$ |$$ |  $$ |
+$$\   $$ |$$ |      $$ |$$   ____|$$ |  $$ | $$ |$$\ $$ |  $$ |$$ |$$ |  $$ |$$ |  $$ |$$ |  $$ |
+\$$$$$$  |\$$$$$$$\ $$ |\$$$$$$$\ $$ |  $$ | \$$$$  |\$$$$$$  |$$ |\$$$$$$  |\$$$$$$$ |\$$$$$$$ |
+ \______/  \_______|\__| \_______|\__|  \__|  \____/  \______/ \__| \______/  \____$$ | \____$$ |
+                                                                             $$\   $$ |$$\   $$ |
+                                                                             \$$$$$$  |\$$$$$$  |
+                                                                              \______/  \______/
+""", "0.003")
+print_d("""Thanks for the name Gabe!
+""", "0.05")
+print_d("Starting...", "0.05")
+time.sleep(3)
+print("")
+print_d("""Answer questions. One wrong, and your out. Type the one lowercase letter.""", "0.05")
+print("")
+print_d("""Q1) How do the intestines absorb nutrients?
+[a] Little worms
+[b] Strands with microscopic holes
+[c] Super Mold""", "0.05")
+time.sleep(0.1)
+var2 = input('')
+print(var2)
+if var2=="b":
+    print_d("""Q2) How what is dialysis tubing?
+[a] edible silicone tubes
+[b] Camera on a hose for endoscopy
+[c] Intestine dialog""" , "0.05")
+else:
+    print("OUT!!!!!")
+
+    </script>
+  </body>
+</html>
